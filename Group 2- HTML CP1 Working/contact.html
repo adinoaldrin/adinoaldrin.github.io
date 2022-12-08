@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/83831b9b44.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Our Website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="https://www.facebook.com/ArellanoUniversityOfficial"><img src="Images/logoau.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="whatishtml.html">WHAT IS HTML?</a></li>
+					<li><a href="blog.html">USES</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Contact Us</h1>
+	</section>
+
+<!------contact us------->
+	<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.713068259837!2d120.9934365751965!3d14.558393978108391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c97b1dca799f%3A0x1594a94fdbfb9835!2sArellano%20University%20-%20Jose%20Abad%20Santos%20High%20School!5e0!3m2!1sen!2sph!4v1670144129257!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5>3058 Taft Avenue, Pasay, 1300</h5>
+						<p>HX5W+9C Pasay, Metro Manila</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>+012345678910</h5>
+						<p>Monday To Saturday, 6AM to 7PM</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-envelope-o"></i>
+					<span>
+						<h5>abcd@gmail.com</h5>
+						<p>Email us your concern!</p>
+					</span>
+				</div>
+			</div>
+			<div class="contact-col">
+
+				<form action="form-handler.php" method="post">
+					<input type="text" name="name" placeholder="Enter Your Name" required>
+					<input type="email" name="email" placeholder="Enter Email Address" required>
+					<input type="text" name="subject" placeholder="Enter Your Concern" required>
+					<textarea rows="8" name="message" placeholder="Message" required></textarea>
+					<button type="submit" class="hero-btn red-btn">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</section>
+<!--------footer-------->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>Follow us in our media account!</p>
+	<div class="icons">
+		<a href="https://www.facebook.com/ArellanoUniversityOfficial"><i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/Arellano_U?s=20&t=7YsHb9qFJdW_zYRiEVV9Ww"><i class="fa fa-twitter"></i></a>
+		<a href="https://goo.gl/maps/VE8oJrThCakcHjEr5"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<p>Made by Group 2 <a href="https://www.facebook.com/aldrinclark.adino" style="text-decoration: none; color: rgb(107, 107, 107);"><br> Aldrin Clark Adino</a> <br> <a href="https://www.facebook.com/PatiltedNaKier" style="text-decoration: none; color: rgb(107, 107, 107);">Sean Turla </a> <br> <a href="https://www.facebook.com/quen.8" style="text-decoration: none; color: rgb(107, 107, 107);">Querene Sionelo</a> <br><a href="https://www.facebook.com/sheiralicious" style="text-decoration: none; color: rgb(107, 107, 107);">Sheira Francisco </a> <br>	<i class="fa fa-heart-o"></i>
+		<a href="https://www.youtube.com/@EasyTutorialsVideo" style="text-decoration: none; color: rgb(107, 107, 107);">Credits to EasyTutorials!</a></p>
+</section>
+
+<!-------JavaScript for close and open toggle ------>
+<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>

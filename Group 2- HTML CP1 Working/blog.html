@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/83831b9b44.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Our Website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="https://www.facebook.com/ArellanoUniversityOfficial"><img src="Images/logoau.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="whatishtml.html">WHAT IS HTML?</a></li>
+					<li><a href="blog.html">Uses</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Uses of HTML</h1>
+	</section>
+
+<!--------------blog------------------>
+<section class="blog-content">
+	<div class="row">
+		<div class="blog-left">
+			<img src="Images/webdev1.jpeg">
+			<h2></h2>
+			<p></p>
+			<div class="comment-box">
+				<h3>Leave a Comment</h3>
+				<form class="comment-form">
+					<input type="text" placeholder="Enter Name">
+					<input type="email" placeholder="Enter Email">
+					<textarea rows="5" placeholder="Your Comment">
+					</textarea>
+					<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+				</form>
+			</div>
+		</div>
+		<div class="blog-right">
+			<h3>Different Kind of uses: </h3>
+			<div>
+				<span>Structuring web pages</span>
+			<div>
+				<span>Navigating the Internet</span>
+			</div>
+			<div>
+				<span>Embedding Images and Videos</span>
+			</div>
+			<div>
+				<span>Improving client-side data storage and offline capabilities</span>
+			</div>
+			<div>
+				<span>Game Development</span>
+			</div>
+			<div>
+				<span>Interacting with native APIs</span>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--------footer-------->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>Follow us in our media account!</p>
+	<div class="icons">
+		<a href="https://www.facebook.com/ArellanoUniversityOfficial"><i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/Arellano_U?s=20&t=7YsHb9qFJdW_zYRiEVV9Ww"><i class="fa fa-twitter"></i></a>
+		<a href="https://goo.gl/maps/VE8oJrThCakcHjEr5"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<p>Made by Group 2 <a href="https://www.facebook.com/aldrinclark.adino" style="text-decoration: none; color: rgb(107, 107, 107);"><br> Aldrin Clark Adino</a> <br> <a href="https://www.facebook.com/PatiltedNaKier" style="text-decoration: none; color: rgb(107, 107, 107);">Sean Turla </a> <br> <a href="https://www.facebook.com/quen.8" style="text-decoration: none; color: rgb(107, 107, 107);">Querene Sionelo</a> <br><a href="https://www.facebook.com/sheiralicious" style="text-decoration: none; color: rgb(107, 107, 107);">Sheira Francisco </a> <br>	<i class="fa fa-heart-o"></i>
+		<a href="https://www.youtube.com/@EasyTutorialsVideo" style="text-decoration: none; color: rgb(107, 107, 107);">Credits to EasyTutorials!</a></p>
+</section>
+
+
+
+
+<!-------JavaScript for close and open toggle ------>
+<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>
